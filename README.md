@@ -3,12 +3,12 @@
 
 ## Step 1: Creating Amazon Elasticsearch domain
 * You can simply open https://aws.amazon.com/elasticsearch-service/ and clik on 'Get started with Amazon Elasticsearch Service' to create your new domain
-* With aws cli, you can Run the following command:
+* With AWS CLI, you can Run the following command:
 ```
 aws es create-elasticsearch-domain --domain-name twittmap --elasticsearch-cluster-config InstanceType=t2.micro.elastic
 search,InstanceCount=1 --ebs-options EBSEnabled=true,VolumeType=gp2,VolumeSize=10
 ```
-* For simplicity, configure the access policy to allow open access to the domain (of course this shouldn't be used in reality)
+* For simplicity, configure the access policy to allow open access to the domain (this can never be used in reality)
 ## Step 2: Streaming Tweets by twetter api
 * Create an EC2 instance
 * Pull the repo from Github, `cd` into `streaming`, and run `pip install -r requirements.txt`
