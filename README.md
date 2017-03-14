@@ -3,7 +3,7 @@
 
 ## Step 1: Creating Amazon Elasticsearch domain
 * You can simply open https://aws.amazon.com/elasticsearch-service/ and clik on 'Get started with Amazon Elasticsearch Service' to create your new domain
-* With AWS CLI, you can Run the following command:
+* Or with AWS CLI, you can Run the following command:
 ```
 aws es create-elasticsearch-domain --domain-name twittmap --elasticsearch-cluster-config InstanceType=t2.micro.elastic
 search,InstanceCount=1 --ebs-options EBSEnabled=true,VolumeType=gp2,VolumeSize=10
