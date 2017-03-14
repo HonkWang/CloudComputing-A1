@@ -11,7 +11,7 @@ search,InstanceCount=1 --ebs-options EBSEnabled=true,VolumeType=gp2,VolumeSize=1
 * For simplicity, configure the access policy to allow open access to the domain (this can never be used in reality)
 ## Step 2: Streaming Tweets by twetter api
 * Create an EC2 instance
-* Pull the repo from Github, `cd` into `streaming`, and run `pip install -r requirements.txt`
+* Pull the repo from Github, `cd` into `Twiitma/streaming`, and run `pip install -r requirements.txt`
 * Run `python Streaming&Indexing.py &`, Run the .py file which streams tweets data through twetter api 
 
 ## Step 3: Creating Index and Type then store them on Elasticsearch
