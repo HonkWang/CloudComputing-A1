@@ -9,6 +9,7 @@ aws es create-elasticsearch-domain --domain-name twittmap --elasticsearch-cluste
 search,InstanceCount=1 --ebs-options EBSEnabled=true,VolumeType=gp2,VolumeSize=10
 ```
 * For simplicity, configure the access policy to allow open access to the domain (this can never be used in reality)
+
 ## Step 2: Streaming tweets by twetter api
 * Create an EC2 instance
 * Pull the repo from Github, `cd` into `Twiitma/streaming`, and run `pip install -r requirements.txt`
@@ -45,12 +46,16 @@ curl -XPUT <Elasticsearch Endpoint>/twittmap -d '
 ```
 curl -XPOST 'http://search-mytestdomain-qnyhs32jjgymxujnd6h75uqwtq.us-east-1.es.amazonaws.com/twittmap/tweets' --data-binary "@tweets.json"
 ```
+
 ## Step 4:Creating Web UI 
-* Create a Web UI using HTML&Javascript to let users choose any keyword from 10 (default) via a drop-down box ['Trump', 'Hilary','Obama','Amazon','Google','New York','Python','Technology','Stanford','Columbia'] Require socket.io (version 1.2.1 or later to escape special character) to send the keyword to back-end 
-* Initialize Google Map using Google Maps API
+* Create a Web UI using HTML&Javascript to let users choose any keyword from 10 (default) via a drop-down box ['Trump', 'Hilary','Obama','Amazon','Google','New York','Python','Technology','Stanford','Columbia'] 
+* Require socket.io (version 1.2.1 or later to escape special character) to send the keyword to back-end 
+* Implement Google Map using Google Maps API
 
 ## Step 5: Searching Tweets 
 * Using node.js express framework as back-end server to connect to elasticsearch Query elasticsearch according to keyword selected by users from the front-end Once ES responds to the server, the server then sends the response as JSON payload to the front-end
+* Require elasticsearch package
+* Require express framework
 
 ## Step 6: Visualizing Tweets 
 * Locate tweets with the geo information we've processed in .py file and place a marker with anchor set to geometry information 
