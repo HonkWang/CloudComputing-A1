@@ -3,9 +3,9 @@
 
 Step 1: Creating Amazon Elasticsearch domain
 
-Step 2: Creating Index and Type 
+Step 2: Streaming Tweets by Creating Index and Type
 
-tep 3: Streaming Tweets Run Twitter StreamingAPI.ipynbs
+Step 3: 
 
 Step 4: Creating Web UI Create a Web UI using html and javascript to let users choose any keyword from 10 (default) via a drop-down box ['Trump', 'Hilary','Obama','Amazon','Google','','Python','Technology','Stanford','Columbia'] Require socket.io (version 1.2.1 or later to escape special character) to send the keyword to back-end Initialize Google Map using Google Maps API
 
