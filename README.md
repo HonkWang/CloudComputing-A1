@@ -62,6 +62,6 @@ curl -XPOST 'http://search-mytestdomain-qnyhs32jjgymxujnd6h75uqwtq.us-east-1.es.
 * Add a listener Event for each marker, whenver the user clicks the marker, an infowindow is created and popped out and the previous infowindow will be closed
 
 ## Step 7: Deploying to Amazon Elastic Beanstalk 
-* Since the Linux VMs do not allow listening on port 80, it's necessary to configure the application to listen on some other port (we used 2222) Make an archive of all files in the directory nodejs (except node_modules), and deploy it to Amazon Elastic Beanstalk Configure the Elastic Load Balancer to forward traffic from port 80 to port 2222, and add corresponding rules to the security groups
+* Since the Linux VMs do not allow listening on port 80, it's necessary to configure the application to listen on some other port (we used 2222) Make an archive of all files in the directory nodejs (except node_modules), and deploy it to Amazon Elastic Beanstalk. Configure the Elastic Load Balancer to forward traffic from port 80 to port 2222, and add corresponding rules to the security groups
 * Make an archive of all files in the directory `nodejs` (except `node_modules`), and deploy it to Amazon Elastic Beanstalk
 * Configure the Elastic Load Balancer to forward traffic from port 80 to port 2222, and add corresponding rules to the security groups
