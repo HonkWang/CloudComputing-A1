@@ -1,6 +1,6 @@
 # CloudComputing-COMSE6998-A1
-# Twittmap by Honk Wang & Jaehoon Cheong
-# UNI:hw2559 & jc4660
+## Twittmap by Honk Wang & Jaehoon Cheong
+## UNI:hw2559 & jc4660
 
 ## Step 1: Creating Amazon Elasticsearch domain
 * You can simply open https://aws.amazon.com/elasticsearch-service/ and clik on 'Get started with Amazon Elasticsearch Service' to create your new domain
